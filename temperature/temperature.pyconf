@@ -1,0 +1,15 @@
+modules {
+  module {
+    name = 'temperature'
+    language = 'python'
+    enabled = 'yes'
+  }
+}
+
+collection_group {
+  collect_every = 60
+  time_threshold = 120
+  metric {
+    name = 'Inlet Temperature'
+  }
+}
