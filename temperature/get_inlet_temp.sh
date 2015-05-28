@@ -1,4 +1,6 @@
 #!/bin/bash
+### log file needs to be world-readable since gmond runs as nobody
+umask 0022
 IPMITOOL=/mnt/HA/sysadmin/bin/ipmitool
 INLETTEMPLOG=/var/log/inlet_temp
 
